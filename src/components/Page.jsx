@@ -1,7 +1,7 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { MdDateRange } from "react-icons/md";
-import { changeDate, details, leavechangeDate } from "../features/home";
+import { changeDate, details, leavechangeDate,spaceClick} from "../features/home";
 import aparts from "../features/aparts";
 import { Link } from "react-router-dom";
 import "./Page.css";
@@ -32,7 +32,7 @@ const Page = () => {
 
   return (
     <>
-      <div className="page-container">
+      <div className="page-container" onClick={()=>dispatch(spaceClick())}>
         <Dates />
         <div className="hotel-list-container">
           <ul>

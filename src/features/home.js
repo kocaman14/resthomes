@@ -67,6 +67,12 @@ homeSlice.caseReducers.applyFilters(state)
 },details:(state,action)=>{
 state.detailspage = aparts.filter((builds)=>builds.id ===  action.payload)
 console.log(state.detailspage)
+},spaceClick:(state,action) =>{
+if(!state.enrtyDate){
+state.enrtyDate = false    
+}
+
+
 }
 
 
@@ -81,5 +87,5 @@ console.log(state.detailspage)
 
 
 
-export const {changeDate,sendDay,sendMonths,sendYears,leavechangeDate,leavesendDay,leavesendMonths,leavesendYears,details}= homeSlice.actions
+export const {changeDate,sendDay,sendMonths,sendYears,leavechangeDate,leavesendDay,leavesendMonths,leavesendYears,details,spaceClick}= homeSlice.actions
 export default homeSlice.reducer

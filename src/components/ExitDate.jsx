@@ -7,6 +7,7 @@ import {
   leavesendYears,
 } from "../features/home";
 import "./ExitDate.css"
+
 const ExitDate = () => {
   const dispatch = useDispatch();
   const { exitDate, day, month, year, yearindex, leaveMonth, leaveyear } =
@@ -21,15 +22,7 @@ const ExitDate = () => {
             {days.map((dates, index) => (
               <button
                 className="date-button"
-                disabled={
-                  year < leaveyear
-                    ? true
-                    : month < leaveMonth
-                    ? true
-                    : index < day
-                    ? true
-                    : false
-                }
+                disabled={year < leaveyear? "": month < leaveMonth? "": index < day? true: false}
                 key={index}
                 onClick={() => dispatch(leavesendDay(dates))}
               >
@@ -48,7 +41,7 @@ const ExitDate = () => {
               <button
                 className="date-button"
                 key={index}
-                disabled={year < leaveyear ? true : index + 1 < month ? true : false}
+                disabled={year < leaveyear ? "" : index + 1 < month ? true : false}
                 onClick={() => dispatch(leavesendMonths(monthName))}
               >
                 {monthName}
