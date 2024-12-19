@@ -1,4 +1,4 @@
-/* Ana Konteyner */
+
 .page-container {
     font-family: Arial, sans-serif;
     padding: 20px;
@@ -9,20 +9,20 @@
     align-items: center;
   }
   
-  /* Başlık */
+
   .page-title {
-    font-size: 2rem;/* Sayfa Konteyneri */
+    font-size: 2rem;
 .page-container {
   padding: 20px;
   background-color: #f4f4f9;
   width: 100%;
-  max-width: 600px; /* Sayfanın genişliğini sınırla */
+  max-width: 600px; 
   margin: 0 auto;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Başlık */
+
 .page-title {
   font-size: 1.5rem;
   font-weight: bold;
@@ -30,21 +30,21 @@
   margin-bottom: 20px;
 }
 
-/* Tarih Seçim Kutuları */
+/
 .date-container {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-/* Tarih Boxları */
+
 .date-box {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* Tarih Etiketi */
+
 .date-label {
   font-size: 1rem;
   font-weight: bold;
@@ -52,7 +52,7 @@
   margin-bottom: 5px;
 }
 
-/* Tarih Gösterim Alanı */
+
 .date-display {
   font-size: 1.2rem;
   display: flex;
@@ -62,14 +62,14 @@
   cursor: pointer;
 }
 
-/* Tarih İkonu */
+
 .date-icon {
   font-size: 1.5rem;
   color: #007bff;
   cursor: pointer;
 }
 
-/* Responsive Tasarım */
+
 @media (max-width: 768px) {
   .page-container {
     padding: 15px;
@@ -88,7 +88,7 @@
   }
 }
 
-/* Sayfa açıldığında küçük görünmesi için */
+
 .enter-date-container, .exit-date-container {
   display: none; /* Başlangıçta gizle */
 }
@@ -139,7 +139,7 @@
     color: #007bff;
   }
   
-  /* Otel Kartları */
+ 
   .hotel-list-container {
     width: 100%;
     max-width: 1200px;
