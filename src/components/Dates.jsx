@@ -5,7 +5,7 @@ import { changeDate, leavechangeDate } from "../features/home";
 import { Link } from "react-router-dom";
 import "./Page.css";
 import EnterDate from "./EnterDate";
-import ExitDate from "./ExitDate"; // Düzeltildi, doğru ExitDate bileşeni kullanıldı
+import ExitDate from "./ExitDate"; 
 
 const Page = () => {
   const dispatch = useDispatch();
