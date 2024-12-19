@@ -1,0 +1,232 @@
+/* Ana Konteyner */
+.page-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Başlık */
+  .page-title {
+    font-size: 2rem;/* Sayfa Konteyneri */
+.page-container {
+  padding: 20px;
+  background-color: #f4f4f9;
+  width: 100%;
+  max-width: 600px; /* Sayfanın genişliğini sınırla */
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Başlık */
+.page-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Tarih Seçim Kutuları */
+.date-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Tarih Boxları */
+.date-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Tarih Etiketi */
+.date-label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+/* Tarih Gösterim Alanı */
+.date-display {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Tarih İkonu */
+.date-icon {
+  font-size: 1.5rem;
+  color: #007bff;
+  cursor: pointer;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+  .page-container {
+    padding: 15px;
+  }
+
+  .page-title {
+    font-size: 1.2rem;
+  }
+
+  .date-display {
+    font-size: 1rem;
+  }
+
+  .date-icon {
+    font-size: 1.2rem;
+  }
+}
+
+/* Sayfa açıldığında küçük görünmesi için */
+.enter-date-container, .exit-date-container {
+  display: none; /* Başlangıçta gizle */
+}
+
+.date-display:hover + .enter-date-container,
+.date-display:hover + .exit-date-container {
+  display: block; /* Tıklanarak açılacak şekilde düzenle */
+}
+
+    color: #222;
+    margin-bottom: 20px;
+  }
+  
+  /* Tarih Kutuları */
+  .date-container {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .date-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .date-label {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+  .date-display {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    background-color: #fff;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    gap: 5px;
+  }
+  
+  .date-icon {
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #007bff;
+  }
+  
+  /* Otel Kartları */
+  .hotel-list-container {
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .hotel-card {
+    list-style: none;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .hotel-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .hotel-title {
+    font-size: 1.4rem;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .hotel-description {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .hotel-price {
+    font-size: 1.2rem;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  .hotel-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .details-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    align-self: flex-start;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .details-button:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    .hotel-card {
+      width: 100%;
+    }
+  
+    .hotel-title {
+      font-size: 1.2rem;
+    }
+  
+    .hotel-price {
+      font-size: 1rem;
+    }
+  
+    .hotel-description {
+      font-size: 0.9rem;
+    }
+  
+    .date-display {
+      font-size: 0.9rem;
+      padding: 5px 8px;
+    }
+  
+    .details-button {
+      font-size: 0.9rem;
+    }
+  }
+  

@@ -13,6 +13,7 @@ leaveday:"gg",
 leaveMonth:"aa",
 leaveyear:"yyyy",
 selectedHotel:[],
+detailspage:[],
 
 }
 
@@ -63,6 +64,9 @@ homeSlice.caseReducers.applyFilters(state)
         const buildDate = new Date(build.year, build.month - 1, build.day);
         return buildDate >= startDate && buildDate <= endDate;
     });
+},details:(state,action)=>{
+state.detailspage = aparts.filter((builds)=>builds.id ===  action.payload)
+console.log(state.detailspage)
 }
 
 
@@ -77,5 +81,5 @@ homeSlice.caseReducers.applyFilters(state)
 
 
 
-export const {changeDate,sendDay,sendMonths,sendYears,leavechangeDate,leavesendDay,leavesendMonths,leavesendYears}= homeSlice.actions
+export const {changeDate,sendDay,sendMonths,sendYears,leavechangeDate,leavesendDay,leavesendMonths,leavesendYears,details}= homeSlice.actions
 export default homeSlice.reducer

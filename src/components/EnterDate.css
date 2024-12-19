@@ -1,0 +1,88 @@
+/* Ana Konteyner */
+.enter-date-container {
+    max-height: 500px; /* Maksimum yükseklik */
+    overflow-y: auto; /* Dikey kaydırma ekler */
+    padding: 20px;
+    background-color: #f4f4f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Tarih Seçim Kutuları */
+  .date-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Başlık */
+  .date-title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Tarih Butonları */
+  .date-buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+    gap: 10px;
+    max-width: 80%;
+    margin: 0 auto;
+    overflow-x: auto; /* Gerektiğinde yatay kaydırma çubuğu ekler */
+    justify-items: center; /* Butonları ortalar */
+    overflow-y: auto; /* Dikey kaydırma ekler */
+  }
+  
+  .date-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    text-align: center;
+    width: 60px;  /* Sabit genişlik */
+    height: 40px; /* Sabit yükseklik */
+    margin: 0 auto;
+  }
+  
+  .date-button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+  }
+  
+  .date-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive Tasarım */
+  @media (max-width: 768px) {
+    .enter-date-container {
+      padding: 15px;
+    }
+  
+    .date-title {
+      font-size: 0.9rem;
+    }
+  
+    .date-button {
+      font-size: 0.9rem;
+      padding: 8px;
+      width: 50px;  /* Mobilde butonları daha küçük yapıyoruz */
+      height: 35px; /* Mobilde butonları daha küçük yapıyoruz */
+    }
+  
+    .date-buttons {
+      grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    }
+  }
+  

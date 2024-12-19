@@ -1,0 +1,103 @@
+/* DetailsContainer: Ana konteyner */
+.details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    gap: 20px;
+  }
+  
+  /* DetailsCard: Her otel bilgisi için kart tasarımı */
+  .details-card {
+    width: 90%;
+    max-width: 800px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Hover efekti: Kart üzerine gelindiğinde */
+  .details-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Header: Kartın üst kısmındaki başlık */
+  .details-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .details-header h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin: 0;
+  }
+  
+  .rate {
+    font-size: 1rem;
+    color: #777;
+  }
+  
+  /* Görselin düzenlenmesi */
+  .details-image {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Detaylar ve fiyat bilgisi */
+  .details-body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .description {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #007bff;
+    margin-top: 10px;
+  }
+  
+  /* Responsive Tasarım (mobil uyumlu) */
+  @media (max-width: 768px) {
+    .details-card {
+      width: 95%;
+    }
+  
+    .details-header h3 {
+      font-size: 1.5rem;
+    }
+  
+    .rate {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .details-header h3 {
+      font-size: 1.2rem;
+    }
+  
+    .rate {
+      font-size: 0.8rem;
+    }
+  
+    .price {
+      font-size: 1rem;
+    }
+  }
+  
